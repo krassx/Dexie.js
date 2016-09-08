@@ -8,8 +8,8 @@
  * www.dexie.com
  * Apache License Version 2.0, January 2004, http://www.apache.org/licenses/
  */
-import Promise from './Promise';
-import {exceptions} from './errors';
+// import Promise from './Promise';
+// import {exceptions} from './errors';
 
 export var keys = Object.keys;
 export var isArray = Array.isArray;
@@ -80,7 +80,7 @@ export function doFakeAutoComplete(fn) {
 }
 
 export function assert(b) {
-    if (!b) throw new exceptions.Internal("Assertion failed");
+    if (!b) throw new Error("Assertion failed");
 }
 
 export function asap(fn) {
